@@ -1,0 +1,70 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout
+  title="Ubicación | Keymar LabelTech"
+  description="Encuentra la ubicación física de Keymar LabelTech en El Salvador. Contáctanos o visítanos fácilmente con nuestro mapa interactivo."
+  canonical="https://www.keymarlabeltech.com.sv/mapa-del-sitio"
+>
+  <Fragment slot="navbar"><Navbar /></Fragment>
+
+  <section class="py-20 px-6 bg-white max-w-5xl mx-auto text-center">
+    <h1 class="text-4xl font-bold mb-4 mt-4 text-[#1E3A8A]">
+      ¿Dónde estamos ubicados?
+    </h1>
+    <p class="text-gray-700 text-lg max-w-2xl mx-auto mb-8">
+      Puedes encontrarnos en una ubicación estratégica en San Salvador. Consulta
+      el siguiente mapa interactivo y visítanos para cotizaciones o asesoría.
+    </p>
+
+    <!-- Google Map Embed -->
+    <div class="rounded-lg shadow overflow-hidden max-w-4xl mx-auto">
+      <iframe
+        src="https://www.google.com/maps?q=Boulevard+Venezuela+412,+San+Salvador,+El+Salvador&output=embed"
+        width="100%"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="w-full h-[450px]"></iframe>
+    </div>
+
+    <div class="mt-8 text-left mx-auto text-gray-700 text-base">
+      <p>
+        <strong>Dirección:</strong><br />
+        Boulevard Venezuela #412<br />
+        Entre Calle 29 de Agosto y 9ª Av. Sur<br />
+        San Salvador, El Salvador
+      </p>
+      <p class="mt-4">
+        <strong>Teléfono:</strong>
+        <a href="tel:+50321040707" class="text-blue-600 hover:underline"
+          >+503 2104-0707</a
+        >
+      </p>
+      <p>
+        <strong>WhatsApp:</strong>
+        <a
+          href="https://wa.me/50378417650"
+          class="text-blue-600 hover:underline">+503 7841-7650</a
+        >
+      </p>
+      <p>
+        <strong>Email:</strong>
+        <a
+          href="mailto:info@keymarlabeltech.com.sv"
+          class="text-blue-600 hover:underline">info@keymarlabeltech.com.sv</a
+        >
+      </p>
+      <p>
+        <strong>Horario de atención:</strong> Lunes a Viernes, 8:00 AM - 5:00 PM
+      </p>
+    </div>
+  </section>
+
+  <Fragment slot="footer"><Footer /></Fragment>
+</Layout>

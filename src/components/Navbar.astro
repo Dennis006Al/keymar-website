@@ -1,0 +1,198 @@
+---
+// src/components/Navbar.astro
+---
+
+<nav
+  class="fixed top-0 w-full z-50 bg-gradient-to-b from-[#1E3A8A]/69 to-blue-700/69 backdrop-blur-md"
+>
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <!-- Logo -->
+    <a href="/" class="inline-block">
+      <img
+        src="/public/img/Logos/logo6.png"
+        alt="Logo Keymar LabelTech"
+        class="h-14 w-auto"
+      />
+    </a>
+
+    <!-- Botón hamburguesa -->
+    <button
+      id="menu-toggle"
+      class="text-white md:hidden focus:outline-none"
+      aria-label="Abrir menú"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-7 w-7"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+
+    <!-- Menú normal (desktop) -->
+    <ul class="hidden md:flex gap-6 text-sm font-medium text-black">
+      <li>
+        <a href="/etiquetas" class="hover:text-blue-300 transition-colors"
+          >Etiquetas</a
+        >
+      </li>
+      <li>
+        <a href="/impresoras" class="hover:text-blue-300 transition-colors"
+          >Impresoras</a
+        >
+      </li>
+      <li>
+        <a href="/lectores" class="hover:text-blue-300 transition-colors"
+          >Lectores</a
+        >
+      </li>
+      <li>
+        <a href="/consumibles" class="hover:text-blue-300 transition-colors"
+          >Consumibles</a
+        >
+      </li>
+      <li>
+        <a href="/servicios" class="hover:text-blue-300 transition-colors"
+          >Servicios</a
+        >
+      </li>
+      <li>
+        <a href="/nosotros" class="hover:text-blue-300 transition-colors"
+          >Nosotros</a
+        >
+      </li>
+      <li>
+        <a href="/contacto" class="hover:text-blue-300 transition-colors"
+          >Contacto</a
+        >
+      </li>
+    </ul>
+  </div>
+
+  <!-- Menú móvil -->
+  <div
+    id="mobile-menu"
+    class="md:hidden max-h-0 overflow-hidden transition-all duration-500 ease-in-out bg-gradient-to-b from-[#1E3A8A]/69 to-blue-700/69 text-black px-6"
+  >
+    <ul class="flex flex-col gap-4 pt-4 text-sm font-medium">
+      <li class="flex items-center gap-2">
+        <svg
+          class="w-5 h-5"
+          stroke="currentColor"
+          fill="none"
+          viewBox="0 0 24 24"
+          ><path d="m15 5 6.3 6.3a2.4 2.4 0 0 1 0 3.4L17 19"></path><path
+            d="M9.586 5.586A2 2 0 0 0 8.172 5H3a1 1 0 0 0-1 1v5.172a2 2 0 0 0 .586 1.414L8.29 18.29a2.426 2.426 0 0 0 3.42 0l3.58-3.58a2.426 2.426 0 0 0 0-3.42z"
+          ></path><circle cx="6.5" cy="9.5" r=".5" fill="currentColor"
+          ></circle></svg
+        >
+        <a href="/etiquetas">Etiquetas</a>
+      </li>
+      <li class="flex items-center gap-2">
+        <svg
+          class="w-5 h-5"
+          stroke="currentColor"
+          fill="none"
+          viewBox="0 0 24 24"
+          ><path
+            d="M13.5 22H7a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v.5"
+          ></path><path d="m16 19 2 2 4-4"></path><path
+            d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v2"
+          ></path><path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6"></path></svg
+        >
+        <a href="/impresoras">Impresoras</a>
+      </li>
+      <li class="flex items-center gap-2">
+        <svg
+          class="w-5 h-5"
+          stroke="currentColor"
+          fill="none"
+          viewBox="0 0 24 24"
+          ><path d="M3 7V5a2 2 0 0 1 2-2h2"></path><path
+            d="M17 3h2a2 2 0 0 1 2 2v2"></path><path
+            d="M21 17v2a2 2 0 0 1-2 2h-2"></path><path
+            d="M7 21H5a2 2 0 0 1-2-2v-2"></path><path d="M8 7v10"></path><path
+            d="M12 7v10"></path><path d="M17 7v10"></path></svg
+        >
+        <a href="/lectores">Lectores</a>
+      </li>
+      <li class="flex items-center gap-2">
+        <svg
+          class="w-5 h-5"
+          stroke="currentColor"
+          fill="none"
+          viewBox="0 0 24 24"
+          ><path
+            d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14"
+          ></path><path d="m7.5 4.27 9 5.15"></path><polyline
+            points="3.29 7 12 12 20.71 7"></polyline><line
+            x1="12"
+            x2="12"
+            y1="22"
+            y2="12"></line><circle cx="18.5" cy="15.5" r="2.5"></circle><path
+            d="M20.27 17.27 22 19"></path></svg
+        >
+        <a href="/consumibles">Consumibles</a>
+      </li>
+      <li class="flex items-center gap-2">
+        <svg
+          class="w-5 h-5"
+          stroke="currentColor"
+          fill="none"
+          viewBox="0 0 24 24"
+          ><circle cx="12" cy="12" r="10"></circle><path d="M9 12h6"
+          ></path><path d="M12 9v6"></path></svg
+        >
+        <a href="/servicios">Servicios</a>
+      </li>
+      <li class="flex items-center gap-2">
+        <svg
+          class="w-5 h-5"
+          stroke="currentColor"
+          fill="none"
+          viewBox="0 0 24 24"
+          ><path d="M3 3h18v18H3z"></path><path d="M9 3v18"></path><path
+            d="M15 3v18"></path><path d="M3 9h18"></path><path d="M3 15h18"
+          ></path></svg
+        >
+        <a href="/nosotros">Nosotros</a>
+      </li>
+      <li class="flex items-center gap-2">
+        <svg
+          class="w-5 h-5"
+          stroke="currentColor"
+          fill="none"
+          viewBox="0 0 24 24"
+          ><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0Z"
+          ></path><circle cx="12" cy="10" r="3"></circle></svg
+        >
+        <a href="/contacto">Contacto</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Script para toggle -->
+  <script type="module">
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("mobile-menu");
+
+      toggle?.addEventListener("click", () => {
+        if (menu.classList.contains("max-h-0")) {
+          menu.classList.remove("max-h-0");
+          menu.classList.add("max-h-screen", "py-4");
+        } else {
+          menu.classList.add("max-h-0");
+          menu.classList.remove("max-h-screen", "py-4");
+        }
+      });
+    });
+  </script>
+</nav>

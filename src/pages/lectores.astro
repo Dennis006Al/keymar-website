@@ -1,0 +1,112 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout
+  title="Lectores de Códigos de Barras | Keymar"
+  description="Lectores 1D y 2D para puntos de venta, almacenes y más. Productos resistentes, rápidos y confiables."
+  canonical="https://www.keymarlabeltech.com.sv/lectores"
+>
+  <Fragment slot="navbar"><Navbar /></Fragment>
+
+  <section class="py-20 px-4 bg-white">
+    <h1 class="text-4xl font-bold text-center mb-4 mt-4">
+      Lectores de Códigos de Barras
+    </h1>
+    <p class="text-lg max-w-2xl mx-auto text-center mb-10">
+      Soluciones confiables para captura de datos en puntos de venta, inventario
+      y logística. Lectores 1D y 2D manuales, fijos e inalámbricos.
+    </p>
+
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
+    >
+      <!-- Manual -->
+      <div
+        class="border p-5 rounded-lg shadow hover:shadow-lg bg-white text-sm"
+      >
+        <img
+          src="/public/img/Productos/lectores/image1.jpg"
+          alt="Lector manual de códigos de barras 1D y 2D"
+          class="rounded mb-4"
+        />
+        <h3 class="text-xl font-semibold text-[#1E3A8A] mb-2">
+          Lectores manuales
+        </h3>
+        <p class="text-gray-700">
+          Ideales para puntos de venta. Fácil uso y alta precisión en códigos 1D
+          y 2D.
+        </p>
+      </div>
+
+      <!-- Inalámbrico -->
+      <div
+        class="border p-5 rounded-lg shadow hover:shadow-lg bg-white text-sm"
+      >
+        <img
+          src="/public/img/Productos/lectores/image2.jpg"
+          alt="Lector inalámbrico para escaneo de códigos en almacén"
+          class="rounded mb-4"
+        />
+        <h3 class="text-xl font-semibold text-[#1E3A8A] mb-2">
+          Lectores inalámbricos
+        </h3>
+        <p class="text-gray-700">
+          Movilidad total con conexión Bluetooth. Perfectos para logística y
+          bodegas.
+        </p>
+      </div>
+
+      <!-- Fijo -->
+      <div
+        class="border p-5 rounded-lg shadow hover:shadow-lg bg-white text-sm"
+      >
+        <img
+          src="/public/img/Productos/lectores/image3.webp"
+          alt="Lector fijo de alta velocidad para líneas de producción"
+          class="rounded mb-4"
+        />
+        <h3 class="text-xl font-semibold text-[#1E3A8A] mb-2">
+          Lectores fijos
+        </h3>
+        <p class="text-gray-700">
+          Instalación en cajas o líneas industriales. Escaneo automatizado y
+          constante.
+        </p>
+      </div>
+    </div>
+
+    <div class="text-center mt-12">
+      <a
+        href="/contacto"
+        class="inline-block bg-blue-600 text-white font-bold px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+      >
+        Cotiza tu lector
+      </a>
+    </div>
+
+    <section
+      class="mt-16 max-w-4xl mx-auto text-gray-700 text-lg leading-relaxed"
+    >
+      <p>
+        En <strong>Keymar LabelTech</strong> distribuimos <strong
+          >lectores de códigos de barras</strong
+        > de alta precisión para puntos de venta, almacenes, logística y manufactura.
+        Contamos con equipos <strong>1D y 2D</strong>, tanto <strong
+          >manuales, inalámbricos como fijos</strong
+        >, adaptados a las necesidades de tu negocio en <strong
+          >El Salvador</strong
+        >.
+      </p>
+      <p class="mt-4">
+        Ofrecemos marcas confiables como <strong>Zebra y Honeywell</strong>, con
+        conectividad USB, Bluetooth y RS232, y brindamos asesoría para elegir el
+        lector adecuado, así como soporte técnico posventa.
+      </p>
+    </section>
+  </section>
+
+  <Fragment slot="footer"><Footer /></Fragment>
+</Layout>

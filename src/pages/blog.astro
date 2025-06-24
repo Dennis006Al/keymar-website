@@ -1,0 +1,60 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout
+  title="Blog Técnico | Keymar LabelTech"
+  description="Explora artículos técnicos sobre impresión, etiquetas, lectores de códigos de barras y soluciones RFID. Consejos y novedades para tu empresa en El Salvador."
+  canonical="https://www.keymarlabeltech.com.sv/blog"
+>
+  <Fragment slot="navbar"><Navbar /></Fragment>
+
+  <section class="py-20 px-4 bg-white text-center">
+    <h1 class="text-4xl font-bold mb-4 mt-4">Blog Técnico</h1>
+    <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-8">
+      Consejos, tendencias y novedades del mundo del etiquetado, impresión
+      térmica y tecnologías de identificación para negocios en El Salvador y
+      Centroamérica.
+    </p>
+
+    <div
+      class="max-w-6xl mx-auto mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+    >
+      <!-- Publicaciones futuras -->
+      <div class="border rounded-xl p-6 shadow hover:shadow-md text-left">
+        <h3 class="text-xl font-semibold text-[#1E3A8A] mb-2">
+          ¿Cuál es la diferencia entre impresión térmica directa y transferencia
+          térmica?
+        </h3>
+        <p class="text-gray-600 text-sm">
+          Descubre cuál tipo de impresión se adapta mejor a tus necesidades y
+          qué impresoras son compatibles.
+        </p>
+      </div>
+
+      <div class="border rounded-xl p-6 shadow hover:shadow-md text-left">
+        <h3 class="text-xl font-semibold text-[#1E3A8A] mb-2">
+          Cómo elegir el lector de códigos de barras adecuado
+        </h3>
+        <p class="text-gray-600 text-sm">
+          Guía práctica para seleccionar el mejor lector según tu tipo de
+          negocio y volumen de escaneo.
+        </p>
+      </div>
+
+      <div class="border rounded-xl p-6 shadow hover:shadow-md text-left">
+        <h3 class="text-xl font-semibold text-[#1E3A8A] mb-2">
+          Ventajas del uso de etiquetas RFID en logística
+        </h3>
+        <p class="text-gray-600 text-sm">
+          Optimiza la trazabilidad y reduce pérdidas en almacenes con tecnología
+          RFID.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <Fragment slot="footer"><Footer /></Fragment>
+</Layout>

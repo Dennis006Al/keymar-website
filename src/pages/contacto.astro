@@ -1,0 +1,247 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout
+  title="Contacto | Keymar LabelTech"
+  description="Contáctanos para cotizaciones, soporte o asesoría en impresión, etiquetas y códigos de barras. WhatsApp: +503 7890-0000"
+  canonical="https://www.keymarlabeltech.com.sv/contacto"
+>
+  <Fragment slot="navbar"><Navbar /></Fragment>
+
+  <section class="py-20 px-4 bg-white">
+    <h1 class="text-4xl font-bold text-center mb-6 mt-4">Contáctanos</h1>
+    <p class="text-center text-gray-700 mb-10 max-w-2xl mx-auto">
+      Llena el formulario o escríbenos directamente por WhatsApp. Estamos listos
+      para ayudarte con soluciones en identificación, etiquetas, impresoras y
+      más.
+    </p>
+
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+      <!-- Formulario -->
+      <form
+        action="https://formsubmit.co/dennislandaverde392@gmail.com"
+        method="POST"
+        enctype="multipart/form-data"
+        class="space-y-4 bg-gray-50 rounded-xl p-6 shadow-md flex flex-col justify-between h-full"
+      >
+        <!-- FormSubmit options -->
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_next"
+          value="http://localhost:4321/gracias"
+        />
+
+        <input
+          type="text"
+          name="nombre"
+          placeholder="Tu nombre"
+          required
+          class="w-full px-4 py-2 border rounded"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Correo electrónico"
+          required
+          class="w-full px-4 py-2 border rounded"
+        />
+
+        <select name="interes" required class="w-full px-4 py-2 border rounded">
+          <option value="">¿Qué deseas cotizar?</option>
+          <option value="Etiquetas">Etiquetas</option>
+          <option value="Impresoras">Impresoras</option>
+          <option value="Lectores">Lectores</option>
+          <option value="Consumibles">Consumibles</option>
+          <option value="Soporte/Reparación">Soporte o reparación</option>
+          <option value="Asesoría">Asesoría personalizada</option>
+        </select>
+
+        <textarea
+          name="mensaje"
+          placeholder="Escribe tu mensaje aquí..."
+          rows="5"
+          required
+          class="w-full px-4 py-2 border rounded"></textarea>
+
+        <!-- Configuraciones ocultas -->
+        <input
+          type="hidden"
+          name="_next"
+          value="http://localhost:4321/gracias"
+        />
+        <input
+          type="hidden"
+          name="_subject"
+          value="Nueva solicitud de contacto desde el sitio web de Keymar"
+        />
+        <input type="hidden" name="_template" value="table" />
+        <button
+          type="submit"
+          class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 w-full mt-auto cursor-pointer"
+        >
+          Enviar mensaje
+        </button>
+      </form>
+
+      <!-- Información de contacto -->
+      <div
+        class="space-y-6 text-gray-700 text-base bg-gray-50 rounded-xl p-6 shadow-md"
+      >
+        <div>
+          <h3 class="text-xl font-semibold text-[#1E3A8A] mb-4 border-b pb-2">
+            Información de contacto
+          </h3>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-3">
+              <svg
+                class="text-blue-600 w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.86 19.86 0 01-8.63-3.07A19.5 19.5 0 014.15 9.19 19.86 19.86 0 011.07 4.5 2 2 0 013 2.18h3a2 2 0 012 1.72c.12.91.37 1.8.72 2.65a2 2 0 01-.45 2.11L7.09 9.91a16 16 0 007 7l1.25-1.25a2 2 0 012.11-.45c.85.35 1.74.6 2.65.72a2 2 0 011.72 2z"
+                >
+                </path>
+              </svg>
+              <span class="hover:text-blue-700">+503 2104-0707</span>
+            </li>
+
+            <li class="flex items-center gap-3">
+              <svg
+                class="text-green-600 w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.5 8.5 0 018 8v.5z"
+                >
+                </path>
+              </svg>
+              <a
+                href="https://wa.me/50378900000"
+                class="text-black hover:text-blue-700"
+              >
+                +503 7890-0000
+              </a>
+            </li>
+
+            <li class="flex items-center gap-3">
+              <svg
+                class="text-blue-600 w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect x="3" y="5" width="18" height="14" rx="2" ry="2"></rect>
+                <polyline points="3 7 12 13 21 7"></polyline>
+              </svg>
+              <span>
+                <a
+                  href="mailto:recepcion@keymarlabeltech.com.sv"
+                  class="hover:text-blue-700"
+                  itemprop="email"
+                >
+                  recepcion@keymarlabeltech.com.sv
+                </a></span
+              >
+            </li>
+
+            <li class="flex items-center gap-3">
+              <svg
+                class="text-blue-600 w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>Lunes a Viernes, 8:00 AM - 5:00 PM</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold text-[#1E3A8A] mb-4 border-b pb-2">
+            Síguenos
+          </h3>
+          <div class="flex gap-4">
+            <!-- Facebook -->
+            <a
+              href="https://facebook.com/keymarlabeltech"
+              target="_blank"
+              aria-label="Facebook"
+              class="p-2 rounded-full hover:bg-blue-100 transition"
+            >
+              <svg
+                class="w-6 h-6 text-blue-600"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-3h2.5V9.5c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12H18l-.5 3h-2.5v7A10 10 0 0 0 22 12z"
+                ></path>
+              </svg>
+            </a>
+            <!-- Instagram -->
+            <a
+              href="https://instagram.com/keymarlabeltech"
+              target="_blank"
+              aria-label="Instagram"
+              class="p-2 rounded-full hover:bg-pink-100 transition"
+            >
+              <svg
+                class="w-6 h-6 text-pink-600"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="pt-4">
+          <a
+            href="https://wa.me/50378900000"
+            class="inline-flex items-center justify-center gap-2 bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.5 8.5 0 018 8v.5z"
+              >
+              </path>
+            </svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Fragment slot="footer"><Footer /></Fragment>
+</Layout>

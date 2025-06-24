@@ -1,0 +1,72 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout
+  title="Preguntas Frecuentes | Keymar LabelTech"
+  description="Resolvemos tus dudas sobre etiquetas, impresoras, lectores, envíos, soporte técnico y más. Atención confiable en El Salvador."
+  canonical="https://www.keymarlabeltech.com.sv/preguntas-frecuentes"
+>
+  <Fragment slot="navbar"><Navbar /></Fragment>
+
+  <section class="py-20 px-6 bg-white">
+    <h1 class="text-4xl font-bold mb-8 mt-4 text-center">
+      Preguntas Frecuentes
+    </h1>
+    <div class="max-w-4xl mx-auto space-y-8 text-gray-800 text-base">
+      <div>
+        <h2 class="text-xl font-semibold text-[#1E3A8A] mb-2">
+          ¿Realizan entregas a todo El Salvador?
+        </h2>
+        <p>
+          Sí. Hacemos entregas en todo el territorio salvadoreño con opciones de
+          envío rápido o retiro en nuestra oficina.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-[#1E3A8A] mb-2">
+          ¿Pueden asesorarme para elegir el producto correcto?
+        </h2>
+        <p>
+          Por supuesto. Nuestro equipo ofrece asesoría personalizada según tu
+          industria, volumen y presupuesto.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-[#1E3A8A] mb-2">
+          ¿Qué marcas de impresoras manejan?
+        </h2>
+        <p>
+          Distribuimos equipos Zebra, Honeywell y Sato (TSC), entre otras. Todos
+          originales y con garantía.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-[#1E3A8A] mb-2">
+          ¿Brindan soporte o reparación de equipos?
+        </h2>
+        <p>
+          Sí. Contamos con servicio técnico especializado en impresoras de
+          etiquetas y lectores de códigos de barras.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-[#1E3A8A] mb-2">
+          ¿Puedo pedir etiquetas personalizadas?
+        </h2>
+        <p>
+          Claro. Fabricamos etiquetas a la medida con tu logotipo, diseño o
+          información variable.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <Fragment slot="footer"><Footer /></Fragment>
+</Layout>

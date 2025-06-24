@@ -1,0 +1,490 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import CarouselSize from "../components/CarouselSize.tsx";
+import ParticlesBackground from "../components/ParticlesBackground.tsx";
+---
+
+<Layout
+  title="Keymar LabelTech - Soluciones en Etiquetas, Impresoras y Reparación | Keymar LabelTech"
+  description="Fabricamos etiquetas, vendemos impresoras y lectores de códigos de barras, además de ofrecer asesoría y reparación de equipos en El Salvador."
+  canonical="https://www.keymarlabeltech.com.sv/"
+>
+  <Fragment slot="navbar"><Navbar /></Fragment>
+
+  <!-- HERO -->
+  <section
+    class="relative pt-25 pb-20 bg-gradient-to-b from-[#1E3A8A] to-blue-700 overflow-hidden"
+  >
+    <!-- Contenedor de dos columnas -->
+    <div
+      class="relative z-10 max-w-7xl mx-auto px-4 flex flex-col-reverse md:flex-row items-center justify-between gap-8"
+    >
+      <!-- Columna de texto -->
+      <div class="text-white text-center md:text-end md:max-w-xl">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">KEYMAR LABELTECH</h1>
+        <h3 class="text-2xl md:text-3xl font-bold mb-4">
+          <span
+            id="rotating-word"
+            class="inline-block transition-opacity duration-700 ease-in-out"
+          >
+            Etiquetando
+          </span>
+          tu futuro.
+        </h3>
+
+        <p class="text-lg mb-6">
+          Soluciones profesionales en etiquetado, impresión y lectores de
+          códigos de barras.
+        </p>
+        <a
+          href="/servicios"
+          class="bg-white font-bold text-[#000000] px-6 py-3 rounded-lg hover:bg-blue-100 transition-colors inline-block"
+        >
+          Ver Servicios
+        </a>
+      </div>
+
+      <!-- Imagen a la derecha -->
+      <div class="w-full md:w-1/2">
+        <img
+          src="/public/img/Logos/menu2.png"
+          alt="Ilustración de soluciones de etiquetado"
+          class="w-full max-w-md mx-auto md:mx-0"
+          loading="lazy"
+        />
+      </div>
+    </div>
+
+    <!-- Partículas de fondo -->
+    <div class="absolute inset-0 z-0">
+      <ParticlesBackground client:load />
+    </div>
+
+    <!-- SVG onda -->
+    <div class="absolute bottom-0 left-0 w-full z-5">
+      <svg
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+        class="w-full h-16 md:h-24"
+      >
+        <path
+          d="M0,120V73.71c47.79-22.2,103.59-32.17,158-28,70.36,5.37,136.33,33.31,206.8,37.5C438.64,87.57,512.34,66.33,583,47.95c69.27-18,138.3-24.88,209.4-13.08,36.15,6,69.85,17.84,104.45,29.34C989.49,95,1113,134.29,1200,67.53V120Z"
+          fill="#ffffff"
+          opacity="1"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section id="productos" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-10 text-center">Nuestros Productos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Tarjeta 1 - Etiquetas -->
+        <a
+          href="/etiquetas"
+          class="card-animation delay-1 card-hover group block p-6 border rounded-xl shadow-sm bg-white text-center"
+          data-animate
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-16 h-16 mx-auto text-blue-600 mb-4 transition-transform duration-300 icon-hover"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="m15 5 6.3 6.3a2.4 2.4 0 0 1 0 3.4L17 19"></path>
+            <path
+              d="M9.586 5.586A2 2 0 0 0 8.172 5H3a1 1 0 0 0-1 1v5.172a2 2 0 0 0 .586 1.414L8.29 18.29a2.426 2.426 0 0 0 3.42 0l3.58-3.58a2.426 2.426 0 0 0 0-3.42z"
+            ></path>
+            <circle cx="6.5" cy="9.5" r=".5" fill="currentColor"></circle>
+          </svg>
+          <h3 class="text-xl font-semibold mb-2">Etiquetas</h3>
+          <p class="text-gray-600 text-sm">
+            Autoadhesivas, térmicas, RFID, preimpresas y más.
+          </p>
+        </a>
+
+        <!-- Tarjeta 2 - Impresoras -->
+        <a
+          href="/impresoras"
+          class="card-animation delay-2 card-hover group block p-6 border rounded-xl shadow-sm bg-white text-center"
+          data-animate
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-16 h-16 mx-auto text-blue-600 mb-4 transition-transform duration-300 icon-hover"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M13.5 22H7a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v.5"
+            ></path>
+            <path d="m16 19 2 2 4-4"></path>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v2"
+            ></path>
+            <path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6"></path>
+          </svg>
+          <h3 class="text-xl font-semibold mb-2">Impresoras</h3>
+          <p class="text-gray-600 text-sm">
+            Zebra, Honeywell, TSC. Transferencia térmica, carnets, etiquetas.
+          </p>
+        </a>
+
+        <!-- Tarjeta 3 - Lectores -->
+        <a
+          href="/lectores"
+          class="card-animation delay-3 card-hover group block p-6 border rounded-xl shadow-sm bg-white text-center"
+          data-animate
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-16 h-16 mx-auto text-blue-600 mb-4 transition-transform duration-300 icon-hover"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M3 7V5a2 2 0 0 1 2-2h2"></path>
+            <path d="M17 3h2a2 2 0 0 1 2 2v2"></path>
+            <path d="M21 17v2a2 2 0 0 1-2 2h-2"></path>
+            <path d="M7 21H5a2 2 0 0 1-2-2v-2"></path>
+            <path d="M8 7v10"></path>
+            <path d="M12 7v10"></path>
+            <path d="M17 7v10"></path>
+          </svg>
+          <h3 class="text-xl font-semibold mb-2">Lectores</h3>
+          <p class="text-gray-600 text-sm">
+            Lectores de códigos 1D y 2D, ideales para puntos de venta e
+            inventario.
+          </p>
+        </a>
+
+        <!-- Tarjeta 4 - Consumibles -->
+        <a
+          href="/consumibles"
+          class="card-animation delay-4 card-hover group block p-6 border rounded-xl shadow-sm bg-white text-center"
+          data-animate
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-16 h-16 mx-auto text-blue-600 mb-4 transition-transform duration-300 icon-hover"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14"
+            ></path>
+            <path d="m7.5 4.27 9 5.15"></path>
+            <polyline points="3.29 7 12 12 20.71 7"></polyline>
+            <line x1="12" x2="12" y1="22" y2="12"></line>
+            <circle cx="18.5" cy="15.5" r="2.5"></circle>
+            <path d="M20.27 17.27 22 19"></path>
+          </svg>
+          <h3 class="text-xl font-semibold mb-2">Consumibles</h3>
+          <p class="text-gray-600 text-sm">
+            Ribbon, tarjetas PVC, papel térmico y suministros para impresión.
+          </p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-10 text-center">Nuestros Servicios</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Asesoría personalizada -->
+        <a
+          href="/servicios"
+          class="card-animation delay-1 card-hover group block max-w-sm w-full p-6 border rounded-xl shadow-sm bg-white text-center"
+          data-animate
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-16 h-16 mx-auto text-blue-600 mb-4 transition-transform duration-300 icon-hover"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M10 15H6a4 4 0 0 0-4 4v2"></path>
+            <path d="m14.305 16.53.923-.382"></path>
+            <path d="m15.228 13.852-.923-.383"></path>
+            <path d="m16.852 12.228-.383-.923"></path>
+            <path d="m16.852 17.772-.383.924"></path>
+            <path d="m19.148 12.228.383-.923"></path>
+            <path d="m19.53 18.696-.382-.924"></path>
+            <path d="m20.772 13.852.924-.383"></path>
+            <path d="m20.772 16.148.924.383"></path>
+            <circle cx="18" cy="15" r="3"></circle>
+            <circle cx="9" cy="7" r="4"></circle>
+          </svg>
+          <h3 class="text-xl font-semibold mb-2">Asesoría personalizada</h3>
+          <p class="text-gray-600 text-sm">
+            Orientación experta en soluciones de etiquetado y tecnologías de
+            identificación.
+          </p>
+        </a>
+
+        <!-- Soporte técnico -->
+        <a
+          href="/servicios"
+          class="card-animation delay-2 card-hover group block max-w-sm w-full p-6 border rounded-xl shadow-sm bg-white text-center"
+          data-animate
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-16 h-16 mx-auto text-blue-600 mb-4 transition-transform duration-300 icon-hover"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+            ></path>
+          </svg>
+          <h3 class="text-xl font-semibold mb-2">Soporte técnico</h3>
+          <p class="text-gray-600 text-sm">
+            Mantenimiento y configuración de sistemas de impresión y lectura de
+            códigos de barras.
+          </p>
+        </a>
+
+        <!-- Reparación de equipos -->
+        <a
+          href="/reparacion"
+          class="card-animation delay-3 card-hover group block max-w-sm w-full p-6 border rounded-xl shadow-sm bg-white text-center"
+          data-animate
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-16 h-16 mx-auto text-blue-600 mb-4 transition-transform duration-300 icon-hover"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M3 3v18h18"></path>
+            <path d="M18 21V8H8v13"></path>
+            <path d="M13 12h1"></path>
+            <path d="M10 15h1"></path>
+            <path d="M10 12h.01"></path>
+            <path d="M13 15h.01"></path>
+            <path d="M16 12h.01"></path>
+            <path d="M16 15h.01"></path>
+          </svg>
+          <h3 class="text-xl font-semibold mb-2">Reparación de equipos</h3>
+          <p class="text-gray-600 text-sm">
+            Servicio técnico especializado en reparación de impresoras y
+            lectores de códigos de barras en El Salvador.
+          </p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUÉ ELEGIRNOS -->
+  <section id="elegirnos" class="py-16 px-4 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">
+        ¿Por qué elegir KEYMAR LABELTECH?
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+        <!-- Beneficio 1 -->
+        <div
+          class="bg-blue-50 p-6 rounded-lg border border-blue-100 text-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#1E3A8A"
+            stroke-width="2"
+            class="lucide lucide-shield-check mb-4 mx-auto"
+          >
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path>
+            <path d="m9 12 2 2 4-4"></path>
+          </svg>
+          <h3 class="text-xl font-semibold mb-2 text-[#1E3A8A]">
+            Calidad Garantizada
+          </h3>
+          <p class="text-gray-700">
+            Fabricamos etiquetas autoadhesivas con materiales de primera calidad
+            y estándares internacionales.
+          </p>
+        </div>
+
+        <!-- Beneficio 2 -->
+        <div
+          class="bg-blue-50 p-6 rounded-lg border border-blue-100 text-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#1E3A8A"
+            stroke-width="2"
+            class="lucide lucide-codesandbox mb-4 mx-auto"
+          >
+            <path
+              d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+            ></path>
+            <path d="m7.5 4.21 4.5 2.6 4.5-2.6"></path>
+            <path d="m7.5 19.79V14.6L3 12"></path>
+            <path d="m21 12-4.5 2.6v5.19"></path>
+            <path d="m3.27 6.96 8.73 5.05 8.73-5.05"></path>
+            <path d="M12 22.08V12"></path>
+          </svg>
+          <h3 class="text-xl font-semibold mb-2 text-[#1E3A8A]">
+            Tecnología Avanzada
+          </h3>
+          <p class="text-gray-700">
+            Ofrecemos soluciones RFID y sistemas de códigos de barras con la
+            última tecnología del mercado.
+          </p>
+        </div>
+
+        <!-- Beneficio 3 -->
+        <div
+          class="bg-blue-50 p-6 rounded-lg border border-blue-100 text-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#1E3A8A"
+            stroke-width="2"
+            class="lucide lucide-headphones mb-4 mx-auto"
+          >
+            <path
+              d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"
+            ></path>
+          </svg>
+          <h3 class="text-xl font-semibold mb-2 text-[#1E3A8A]">
+            Soporte Técnico
+          </h3>
+          <p class="text-gray-700">
+            Asesoría especializada y soporte continuo para todas nuestras
+            soluciones de identificación.
+          </p>
+        </div>
+
+        <!-- Beneficio 4 -->
+        <div
+          class="bg-blue-50 p-6 rounded-lg border border-blue-100 text-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#1E3A8A"
+            stroke-width="2"
+            class="lucide lucide-badge-percent mb-4 mx-auto"
+          >
+            <path
+              d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"
+            ></path>
+            <path d="m15 9-6 6"></path>
+            <path d="M9 9h.01"></path>
+            <path d="M15 15h.01"></path>
+          </svg>
+          <h3 class="text-xl font-semibold mb-2 text-[#1E3A8A]">
+            Soluciones a Medida
+          </h3>
+          <p class="text-gray-700">
+            Etiquetas personalizadas con acabados especiales para necesidades
+            específicas de tu negocio.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE MARCAS -->
+  <section class="py-16 bg-white">
+    <h2 class="text-3xl font-bold mb-10 text-center">Nuestras Marcas</h2>
+    <CarouselSize client:load />
+  </section>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Solo ejecutar en desktop (opcional)
+      if (window.innerWidth < 768) {
+        document.querySelectorAll("[data-animate]").forEach((card) => {
+          card.classList.add("visible");
+        });
+        return;
+      }
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.1,
+          rootMargin: "0px 0px -50px 0px",
+        },
+      );
+
+      document.querySelectorAll("[data-animate]").forEach((card) => {
+        observer.observe(card);
+      });
+    });
+
+    // Rotador de texto dinámico
+    const phrases = ["Etiquetando", "Imprimiendo", "Escaneando"];
+    let index = 0;
+    const el = document.getElementById("rotating-word");
+
+    if (el) {
+      setInterval(() => {
+        el.classList.add("opacity-0");
+
+        setTimeout(() => {
+          index = (index + 1) % phrases.length;
+          el.textContent = phrases[index];
+          el.classList.remove("opacity-0");
+        }, 500);
+      }, 3000);
+    }
+  </script>
+  <Fragment slot="footer"><Footer /></Fragment>
+</Layout>

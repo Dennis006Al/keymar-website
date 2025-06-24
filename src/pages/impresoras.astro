@@ -1,0 +1,119 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout
+  title="Impresoras de Códigos de Barras | Keymar LabelTech"
+  description="Venta de impresoras Zebra, TSC y Honeywell en El Salvador. Equipos de escritorio e industriales para impresión de etiquetas y códigos de barras."
+  canonical="https://www.keymarlabeltech.com.sv/impresoras"
+>
+  <Fragment slot="navbar"><Navbar /></Fragment>
+
+  <section class="py-16 px-4 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <h1 class="text-4xl font-bold mb-4 text-center pt-4 mt-4">
+        Impresoras de Códigos de Barras
+      </h1>
+      <p class="text-lg max-w-2xl mx-auto mb-6">
+        Contamos con una línea completa de impresoras térmicas directas y por
+        transferencia de marcas como <strong>Zebra, Honeywell y Soto</strong>.
+        Perfectas para etiquetas, carnets y más.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+        <!-- Zebra -->
+        <div
+          class="p-6 border rounded-lg shadow hover:shadow-lg transition bg-white"
+        >
+          <img
+            src="/img/Productos/impresoras/image1.jpg"
+            alt="Impresora Zebra de códigos de barras"
+            class="rounded mb-4"
+          />
+          <h3 class="text-xl font-semibold text-[#1E3A8A] mb-2">Zebra</h3>
+          <p class="text-gray-700 text-sm mb-2">
+            Especialistas en impresoras de etiquetas industriales, móviles y de
+            escritorio.
+          </p>
+          <ul class="text-sm list-disc pl-5 text-gray-600 mb-4">
+            <li>Impresoras industriales de alto volumen</li>
+            <li>Modelos portátiles para inventario</li>
+            <li>Compatibles con etiquetas térmicas</li>
+          </ul>
+        </div>
+
+        <!-- Honeywell -->
+        <div
+          class="p-6 border rounded-lg shadow hover:shadow-lg transition bg-white"
+        >
+          <img
+            src="/img/Productos/impresoras/image2.jpg"
+            alt="Impresora Honeywell para etiquetas"
+            class="rounded mb-4"
+          />
+          <h3 class="text-xl font-semibold text-[#1E3A8A] mb-2">Honeywell</h3>
+          <p class="text-gray-700 text-sm mb-2">
+            Reconocidas por su durabilidad y eficiencia en ambientes
+            industriales.
+          </p>
+          <ul class="text-sm list-disc pl-5 text-gray-600 mb-4">
+            <li>Modelos térmicos directos y transferencia</li>
+            <li>Fáciles de integrar con software ERP</li>
+            <li>Altamente resistentes al uso continuo</li>
+          </ul>
+        </div>
+
+        <!-- Sato -->
+        <div
+          class="p-6 border rounded-lg shadow hover:shadow-lg transition bg-white"
+        >
+          <img
+            src="/img/Productos/impresoras/image3.jpg"
+            alt="Impresora Sato"
+            class="rounded mb-4"
+          />
+          <h3 class="text-xl font-semibold text-[#1E3A8A] mb-2">Sato</h3>
+          <p class="text-gray-700 text-sm mb-2">
+            Ideales para impresión de etiquetas personalizadas en diversas
+            industrias.
+          </p>
+          <ul class="text-sm list-disc pl-5 text-gray-600 mb-4">
+            <li>Alto rendimiento a bajo costo</li>
+            <li>Modelos de escritorio y portátiles</li>
+            <li>Compatible con múltiples tipos de etiquetas</li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center mt-12">
+        <a
+          href="/contacto"
+          class="inline-block bg-blue-600 text-white font-bold px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+        >
+          Cotiza tu impresora
+        </a>
+      </div>
+    </div>
+
+    <section
+      class="mt-16 max-w-4xl mx-auto text-gray-700 text-lg leading-relaxed"
+    >
+      <p>
+        En <strong>Keymar LabelTech</strong> ofrecemos impresoras de códigos de barras
+        de las marcas <strong>Zebra, Honeywell y Sato</strong>, reconocidas a
+        nivel mundial por su calidad y durabilidad. Contamos con modelos de
+        escritorio, industriales y móviles, ideales para diversos entornos de
+        trabajo en <strong>El Salvador</strong>.
+      </p>
+      <p class="mt-4">
+        Nuestras soluciones incluyen impresoras de <strong
+          >transferencia térmica y térmica directa</strong
+        >, así como equipos para impresión de carnets y etiquetas especiales.
+        También brindamos soporte técnico y suministros compatibles para cada
+        modelo.
+      </p>
+    </section>
+  </section>
+
+  <Fragment slot="footer"><Footer /></Fragment>
+</Layout>

@@ -1,0 +1,48 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout
+  title="Gracias por contactarnos | Keymar LabelTech"
+  description="Hemos recibido tu mensaje. Pronto nuestro equipo se pondrá en contacto contigo."
+  canonical="http://localhost:4321/gracias"
+>
+  <Fragment slot="navbar"><Navbar /></Fragment>
+
+  <section class="py-24 px-4 bg-white">
+    <div
+      class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12"
+    >
+      <!-- Imagen -->
+      <div class="w-full md:w-1/2">
+        <img
+          src="/public/img/Gracias/gracias.jpg"
+          alt="Personaje agradeciendo con estilo de código de barras"
+          class="w-full h-full object-contain"
+        />
+      </div>
+
+      <!-- Texto de agradecimiento -->
+      <div class="w-full md:w-1/2 text-center md:text-left">
+        <h1 class="text-4xl font-bold mb-4 text-[#1E3A8A]">
+          ¡Gracias por contactarnos!
+        </h1>
+        <p class="text-lg text-gray-700 mb-8 max-w-xl">
+          Hemos recibido tu mensaje y te responderemos lo antes posible. Nuestro
+          equipo está listo para ayudarte con soluciones de etiquetado,
+          impresión o asesoría técnica.
+        </p>
+        <a
+          href="/"
+          class="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded hover:bg-blue-700 transition"
+        >
+          Volver al inicio
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Fragment slot="footer"><Footer /></Fragment>
+</Layout>

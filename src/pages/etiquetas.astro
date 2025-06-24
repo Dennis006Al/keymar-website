@@ -1,0 +1,149 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout
+  title="Etiquetas Autoadhesivas | Keymar"
+  description="Venta de etiquetas autoadhesivas, etiquetas térmicas y RFID en El Salvador. Soluciones confiables y de alta calidad para tu negocio."
+  canonical="https://www.keymarlabeltech.com.sv/etiquetas"
+>
+  <Fragment slot="navbar"><Navbar /></Fragment>
+
+  <section class="py-20 px-4 text-center bg-white">
+    <h1 class="text-4xl font-bold mb-4 mt-4">Etiquetas Autoadhesivas</h1>
+    <p class="text-lg max-w-2xl mx-auto mb-6">
+      Amplia variedad de etiquetas para impresoras térmicas, etiquetas RFID,
+      etiquetas para inventario, productos y más.
+    </p>
+
+    <h2 class="text-2xl font-semibold mt-12 mb-6 text-[#1E3A8A] text-center">
+      Tipos de etiquetas que ofrecemos
+    </h2>
+
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center max-w-6xl mx-auto"
+    >
+      <!-- Térmica -->
+      <div
+        class="w-[250px] border p-4 rounded-md shadow-sm hover:shadow-md transition bg-white text-sm"
+      >
+        <img
+          src="/public/img/Productos/etiquetas/image1.jpg"
+          alt="Etiquetas térmicas para impresoras Zebra y Honeywell"
+          class="rounded mb-4"
+        />
+        <h3 class="text-xl font-semibold text-[#1E3A8A] mb-2">
+          Etiquetas térmicas
+        </h3>
+        <p class="text-gray-700 text-sm">
+          Disponibles en formato directo o transferencia térmica. Ideales para
+          impresión rápida y económica.
+        </p>
+      </div>
+
+      <!-- RFID -->
+      <div
+        class="w-[250px] border p-4 rounded-md shadow-sm hover:shadow-md transition bg-white text-sm"
+      >
+        <img
+          src="/public/img/Productos/etiquetas/image6.jpg"
+          alt="Etiqueta RFID con chip para trazabilidad logística"
+          class="rounded mb-4"
+        />
+        <h3 class="text-xl font-semibold text-[#1E3A8A] mb-2">
+          Etiquetas RFID
+        </h3>
+        <p class="text-gray-700 text-sm">
+          Perfectas para trazabilidad y control de inventario. Compatible con
+          lectores industriales y comerciales.
+        </p>
+      </div>
+
+      <!-- Polipropileno -->
+      <div
+        class="w-[250px] border p-4 rounded-md shadow-sm hover:shadow-md transition bg-white text-sm"
+      >
+        <img
+          src="/public/img/Productos/etiquetas/image3.jpg"
+          alt="Etiqueta en polipropileno blanco o transparente"
+          class="rounded mb-4"
+        />
+        <h3 class="text-xl font-semibold text-[#1E3A8A] mb-2">
+          Etiquetas en polipropileno
+        </h3>
+        <p class="text-gray-700 text-sm">
+          Etiquetas duraderas resistentes al agua y químicos. En blanco,
+          transparente o metalizado.
+        </p>
+      </div>
+
+      <!-- Fluorescentes -->
+      <div
+        class="w-[250px] border p-4 rounded-md shadow-sm hover:shadow-md transition bg-white text-sm"
+      >
+        <img
+          src="/public/img/Productos/etiquetas/image2.jpg"
+          alt="Etiquetas fluorescentes en varios colores"
+          class="rounded mb-4"
+        />
+        <h3 class="text-xl font-semibold text-[#1E3A8A] mb-2">
+          Etiquetas fluorescentes
+        </h3>
+        <p class="text-gray-700 text-sm">
+          Colores vibrantes como verde, naranja, rojo y rosado. Ideales para
+          llamar la atención o uso industrial.
+        </p>
+      </div>
+
+      <!-- Personalizadas -->
+      <div
+        class="w-[250px] border p-4 rounded-md shadow-sm hover:shadow-md transition bg-white text-sm"
+      >
+        <img
+          src="/public/img/Productos/etiquetas/image5.jpg"
+          alt="Etiqueta preimpresa personalizada con logotipo"
+          class="rounded mb-4"
+        />
+        <h3 class="text-xl font-semibold text-[#1E3A8A] mb-2">
+          Etiquetas personalizadas
+        </h3>
+        <p class="text-gray-700 text-sm">
+          Con tu logo, códigos o diseño a medida. Preimpresas a todo color para
+          una imagen profesional.
+        </p>
+      </div>
+    </div>
+
+    <div class="text-center mt-12">
+      <a
+        href="/contacto"
+        class="inline-block bg-blue-600 text-white font-bold px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+      >
+        Solicitar Cotización
+      </a>
+    </div>
+
+    <section
+      class="mt-16 max-w-4xl mx-auto text-gray-700 text-lg leading-relaxed"
+    >
+      <p>
+        En <strong>Keymar LabelTech</strong> fabricamos e importamos etiquetas autoadhesivas
+        de alta calidad para múltiples industrias en <strong>El Salvador</strong
+        >. Nuestras etiquetas térmicas y <strong>etiquetas RFID</strong> se adaptan
+        a impresoras Zebra, Honeywell, Sato y otras marcas líderes.
+      </p>
+      <p class="mt-4">
+        Contamos con materiales como papel semibrillante, <strong
+          >transferencia térmica</strong
+        >, polipropileno blanco y transparente, y opciones fluorescentes para
+        resaltar productos o códigos. Además, ofrecemos <strong
+          >etiquetas personalizadas</strong
+        > y preimpresas según las necesidades de tu empresa.
+      </p>
+    </section>
+  </section>
+
+  <Fragment slot="footer"><Footer /></Fragment>
+</Layout>

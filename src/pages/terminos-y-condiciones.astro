@@ -1,0 +1,54 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout
+  title="Términos y Condiciones | Keymar LabelTech"
+  description="Consulta los términos y condiciones de uso del sitio web de Keymar LabelTech en El Salvador."
+  canonical="https://www.keymarlabeltech.com.sv/terminos-y-condiciones"
+>
+  <Fragment slot="navbar"><Navbar /></Fragment>
+
+  <section class="py-20 px-6 bg-white max-w-4xl mx-auto text-gray-800">
+    <h1 class="text-4xl font-bold mb-6 mt-4 text-center">
+      Términos y Condiciones
+    </h1>
+    <p class="mb-4">
+      Bienvenido al sitio web de Keymar LabelTech. Al navegar o utilizar este
+      sitio web, aceptas cumplir con los siguientes términos y condiciones:
+    </p>
+
+    <ul class="list-disc pl-5 space-y-3">
+      <li>
+        <strong>Uso del sitio:</strong> Este sitio tiene fines informativos y comerciales
+        relacionados con productos y servicios de identificación.
+      </li>
+      <li>
+        <strong>Propiedad intelectual:</strong> Todos los contenidos, imágenes y
+        marcas son propiedad de Keymar LabelTech o de sus respectivos titulares.
+      </li>
+      <li>
+        <strong>Exactitud de la información:</strong> Hacemos esfuerzos por mantener
+        la información actualizada, pero no garantizamos su precisión en todo momento.
+      </li>
+      <li>
+        <strong>Modificaciones:</strong> Keymar LabelTech se reserva el derecho de
+        modificar estos términos sin previo aviso.
+      </li>
+      <li>
+        <strong>Jurisdicción:</strong> Este sitio se rige por las leyes de El Salvador.
+      </li>
+    </ul>
+
+    <p class="mt-6">
+      Si tienes preguntas sobre estos términos, contáctanos a <a
+        href="mailto:info@keymarlabeltech.com.sv"
+        class="text-blue-600 hover:underline">info@keymarlabeltech.com.sv</a
+      >.
+    </p>
+  </section>
+
+  <Fragment slot="footer"><Footer /></Fragment>
+</Layout>

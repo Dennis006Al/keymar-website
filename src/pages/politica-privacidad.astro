@@ -1,0 +1,37 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout
+  title="Política de Privacidad | Keymar LabelTech"
+  description="Lee cómo protegemos tus datos personales y tu privacidad en Keymar LabelTech. Seguridad y transparencia en todo momento."
+  canonical="https://www.keymarlabeltech.com.sv/politica-privacidad"
+>
+  <Fragment slot="navbar"><Navbar /></Fragment>
+
+  <section class="py-20 px-6 bg-white text-left max-w-4xl mx-auto">
+    <h1 class="text-4xl font-bold mb-6 mt-4 text-center">
+      Política de Privacidad
+    </h1>
+
+    <p class="mb-4">
+      En <strong>Keymar LabelTech</strong> valoramos tu privacidad y protegemos tu
+      información de forma segura y responsable. Esta política explica cómo recopilamos,
+      usamos y protegemos los datos de los usuarios que interactúan con nuestro sitio
+      web.
+    </p>
+
+    <h2 class="text-2xl font-semibold text-[#1E3A8A] mt-8 mb-2">
+      1. Información que recopilamos
+    </h2>
+    <p>
+      Recopilamos información personal como nombre, correo electrónico y
+      teléfono solo cuando los usuarios la proporcionan voluntariamente a través
+      de formularios de contacto o cotización
+    </p>
+  </section>
+
+  <Fragment slot="footer"><Footer /></Fragment>
+</Layout>

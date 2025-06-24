@@ -1,0 +1,167 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout
+  title="Quiénes Somos | Keymar LabelTech"
+  description="Conoce a Keymar LabelTech, empresa en El Salvador con más de 15 años de experiencia acumulada en soluciones de impresión, etiquetado y trazabilidad para múltiples industrias."
+  canonical="https://www.keymarlabeltech.com.sv/nosotros"
+>
+  <Fragment slot="navbar"><Navbar /></Fragment>
+
+  <!-- Hero de presentación -->
+  <section class="py-20 px-6 bg-white text-center">
+    <h1 class="text-4xl font-bold mb-4 mt-4">Conoce a Keymar LabelTech</h1>
+    <p class="max-w-2xl mx-auto text-lg text-gray-700 mb-6">
+      Somos una empresa salvadoreña joven con una base sólida: aunque Keymar
+      LabelTech tiene 2 años de fundada, nuestro equipo cuenta con más de 15
+      años de experiencia en soluciones de identificación automática, impresión
+      industrial y trazabilidad.
+    </p>
+    <img
+      src="/public/img/Nosotros/image1.jpg"
+      alt="Equipo de trabajo de Keymar LabelTech en El Salvador"
+      class="rounded-lg shadow-md mx-auto max-w-3xl"
+    />
+  </section>
+
+  <!-- Historia y experiencia -->
+  <section class="py-16 px-6 bg-gray-50">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <img
+          src="/public/img/Nosotros/image2.jpg"
+          alt="Fábrica de etiquetas autoadhesivas Keymar"
+          class="rounded-lg shadow"
+        />
+      </div>
+      <div>
+        <h2 class="text-2xl font-bold text-[#1E3A8A] mb-4">
+          Experiencia que se nota
+        </h2>
+        <p class="text-gray-700 mb-4">
+          Nuestro equipo ha liderado proyectos de implementación tecnológica en
+          diversas industrias. Conocemos el entorno local y los retos del
+          sector. Esa experiencia es lo que nos permite ofrecer soluciones
+          eficaces desde el primer día.
+        </p>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+          <li>
+            Fabricación de etiquetas en El Salvador con estándares
+            internacionales.
+          </li>
+          <li>Distribución oficial de marcas como Zebra, Honeywell y Sato.</li>
+          <li>
+            Consultoría técnica, soporte preventivo y correctivo especializado.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Misión, visión y valores -->
+  <section class="bg-white py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">Nuestra Esencia</h2>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center items-stretch"
+      >
+        <!-- Misión -->
+        <div
+          class="flex flex-col border p-6 rounded-lg shadow-sm hover:shadow-md transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-16 h-16 mx-auto text-blue-600 mb-4"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="12" cy="12" r="10"></circle><circle
+              cx="12"
+              cy="12"
+              r="6"></circle><circle cx="12" cy="12" r="2"></circle>
+          </svg>
+          <h3 class="text-xl font-semibold text-[#1E3A8A] mb-3">Misión</h3>
+          <p class="text-gray-700 text-sm flex-grow">
+            Ofrecer productos de calidad internacional y soluciones que superen
+            las expectativas de nuestros clientes, siendo su aliado estratégico
+            en precio, calidad y servicio.
+          </p>
+        </div>
+
+        <!-- Visión -->
+        <div
+          class="flex flex-col border p-6 rounded-lg shadow-sm hover:shadow-md transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-16 h-16 mx-auto text-blue-600 mb-4"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12Z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+          </svg>
+          <h3 class="text-xl font-semibold text-[#1E3A8A] mb-3">Visión</h3>
+          <p class="text-gray-700 text-sm flex-grow">
+            Ser una empresa líder en el rubro de identificación automática,
+            impulsando el desarrollo de nuestros colaboradores y aportando
+            innovación y eficiencia a nuestros socios de negocio.
+          </p>
+        </div>
+
+        <!-- Valores -->
+        <div
+          class="flex flex-col border p-6 rounded-lg shadow-sm hover:shadow-md transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-16 h-16 mx-auto text-blue-600 mb-4"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M6 3h12l3 6-9 12-9-12Z"></path><path d="M3 9h18"></path>
+          </svg>
+          <h3 class="text-xl font-semibold text-[#1E3A8A] mb-3">Valores</h3>
+          <ul
+            class="text-gray-700 text-sm flex-grow space-y-1 text-left list-disc list-inside mx-auto max-w-[220px]"
+          >
+            <li>Honestidad</li>
+            <li>Liderazgo</li>
+            <li>Ética profesional</li>
+            <li>Responsabilidad</li>
+            <li>Orientación al cliente</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="text-center mt-16">
+        <h3 class="text-2xl font-bold mb-2">
+          ¿Listo para dar el siguiente paso?
+        </h3>
+        <p class="text-gray-700 mb-4">
+          Contáctanos para recibir una asesoría personalizada sobre nuestros
+          productos y servicios.
+        </p>
+        <a
+          href="/contacto"
+          class="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+        >
+          Contáctanos
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Fragment slot="footer"><Footer /></Fragment>
+</Layout>

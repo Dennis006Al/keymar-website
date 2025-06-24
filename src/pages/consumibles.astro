@@ -1,0 +1,111 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout
+  title="Consumibles para Impresoras | Keymar"
+  description="Ribbons, tarjetas PVC, papel térmico y más. Todo lo que necesitas para tu impresora de etiquetas o carnets."
+  canonical="https://www.keymarlabeltech.com.sv/consumibles"
+>
+  <Fragment slot="navbar"><Navbar /></Fragment>
+
+  <section class="py-20 px-4 text-center bg-white">
+    <h1 class="text-4xl font-bold mb-4 mt-4">Consumibles y Accesorios</h1>
+    <p class="text-lg max-w-2xl mx-auto mb-6">
+      Proveemos consumibles originales y compatibles para mantener tus equipos
+      funcionando al 100%.
+    </p>
+
+    <h2 class="text-2xl font-semibold mt-12 mb-6 text-[#1E3A8A]">
+      Productos Disponibles
+    </h2>
+
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto text-left"
+    >
+      <!-- Ribbon -->
+      <div
+        class="border p-4 rounded-md shadow-sm hover:shadow-md transition bg-white text-sm"
+      >
+        <img
+          src="/public/img/Productos/consumibles/image1.jpg"
+          alt="Ribbon de cera y resina para impresoras térmicas"
+          class="rounded mb-4"
+        />
+        <h3 class="text-xl font-semibold text-[#1E3A8A] mb-2">Ribbon</h3>
+        <p class="text-gray-700 text-sm">
+          Cera, resina o mixto. Compatibles con impresoras Zebra, Honeywell,
+          Sato y más.
+        </p>
+      </div>
+
+      <!-- Tarjetas PVC -->
+      <div
+        class="border p-4 rounded-md shadow-sm hover:shadow-md transition bg-white text-sm"
+      >
+        <img
+          src="/public/img/Productos/consumibles/image2.jpg"
+          alt="Tarjetas PVC blancas para impresión de credenciales"
+          class="rounded mb-4"
+        />
+        <h3 class="text-xl font-semibold text-[#1E3A8A] mb-2">Tarjetas PVC</h3>
+        <p class="text-gray-700 text-sm">
+          Ideales para carnets, identificaciones y tarjetas personalizadas. Alta
+          durabilidad.
+        </p>
+      </div>
+
+      <!-- Papel térmico -->
+      <div
+        class="border p-4 rounded-md shadow-sm hover:shadow-md transition bg-white text-sm"
+      >
+        <img
+          src="/public/img/Productos/consumibles/image3.jpg"
+          alt="Rollo de papel térmico para impresora de tickets"
+          class="rounded mb-4"
+        />
+        <h3 class="text-xl font-semibold text-[#1E3A8A] mb-2">Papel térmico</h3>
+        <p class="text-gray-700 text-sm">
+          Papel térmico directo para impresión de tickets, recibos y etiquetas
+          temporales.
+        </p>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center mt-12">
+      <a
+        href="/contacto"
+        class="inline-block bg-blue-600 text-white font-bold px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+      >
+        Solicitar Cotización
+      </a>
+    </div>
+
+    <!-- Texto SEO al final -->
+    <section
+      class="mt-16 max-w-4xl mx-auto text-gray-700 text-lg leading-relaxed"
+    >
+      <p>
+        En <strong>Keymar LabelTech</strong> ofrecemos una amplia gama de <strong
+          >consumibles para impresoras</strong
+        >, garantizando compatibilidad y calidad en cada producto. Nuestro stock
+        incluye ribbons de cera, resina y mixtos, <strong>tarjetas PVC</strong> para
+        impresión de carnets, y <strong>papel térmico</strong> para tickets o etiquetas
+        temporales.
+      </p>
+      <p class="mt-4">
+        Trabajamos con insumos compatibles con impresoras de marcas líderes como <strong
+          >Zebra, Honeywell y Sato</strong
+        >. Ya sea para operaciones industriales o comerciales en <strong
+          >El Salvador</strong
+        >, tenemos los accesorios necesarios para que tus equipos funcionen sin
+        interrupciones.
+      </p>
+    </section>
+  </section>
+
+  <Fragment slot="footer"><Footer /></Fragment>
+</Layout>

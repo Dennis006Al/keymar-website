@@ -1,0 +1,92 @@
+---
+const {
+  title,
+  description = "Keymar Label Tech | Soluciones profesionales en impresión, etiquetas y códigos de barras en El Salvador.",
+  canonical = "https://www.keymarlabeltech.com.sv",
+} = Astro.props;
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="/public/img/Logos/favicon.png"
+      type="image/x-icon"
+      sizes="128x128"
+    />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <!-- SEO Social -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="canonical" href={canonical} />
+    <link rel="stylesheet" href="/src/styles/global.css" />
+  </head>
+
+  <body class="bg-gray-50 text-gray-900">
+    <slot name="navbar" />
+    <main class="min-h-screen">
+      <slot />
+    </main>
+    <slot name="footer" />
+
+    <!-- WhatsApp Flotante con notificación -->
+    <a
+      href="https://wa.me/50378417650"
+      id="whatsappBtn"
+      class="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg z-50 transition-all duration-300 flex items-center justify-center"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat por WhatsApp"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-6 h-6"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+      >
+        <path
+          d="M20 3.5A10.47 10.47 0 0012 1C6.48 1 2 5.48 2 11c0 1.85.5 3.58 1.37 5.08L2 22l6.1-1.6A10.5 10.5 0 0022 11c0-2.78-1.08-5.32-3-7.21z"
+        ></path>
+      </svg>
+      <span
+        id="notificationBadge"
+        class="hidden absolute -top-5 -right-2 bg-red-500 text-xs text-white rounded-full px-2 py-1 animate-pulse whitespace-nowrap"
+      >
+        ¡Listo para cotizar?
+      </span>
+    </a>
+
+    <!-- Animación de notificación WhatsApp -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const whatsappBtn = document.getElementById("whatsappBtn");
+        const notification = document.getElementById("notificationBadge");
+
+        if (!whatsappBtn || !notification) return;
+
+        const showNotification = () => {
+          notification.classList.remove("hidden");
+          whatsappBtn.classList.add("animate-bounce");
+
+          setTimeout(() => {
+            notification.classList.add("hidden");
+            whatsappBtn.classList.remove("animate-bounce");
+
+            const nextShowTime = Math.floor(Math.random() * 120000) + 120000;
+            setTimeout(showNotification, nextShowTime);
+          }, 15000);
+        };
+
+        setTimeout(showNotification, 30000);
+      });
+    </script>
+  </body>
+</html>

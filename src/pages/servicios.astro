@@ -1,0 +1,140 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout
+  title="Servicios de Asesoría, Soporte y Reparación | Keymar LabelTech"
+  description="Ofrecemos servicios técnicos en El Salvador: asesoría personalizada, soporte para impresoras y lectores, y reparación profesional de equipos de código de barras."
+  canonical="https://www.keymarlabeltech.com.sv/servicios"
+>
+  <Fragment slot="navbar"><Navbar /></Fragment>
+
+  <!-- Encabezado -->
+  <section class="py-20 px-6 bg-white text-center">
+    <h1 class="text-4xl font-bold mb-6 mt-4">
+      Servicios Profesionales en Identificación
+    </h1>
+    <p class="max-w-2xl mx-auto text-gray-700 text-lg">
+      En <strong>Keymar LabelTech</strong> ofrecemos más que productos. Brindamos
+      <strong>asesoría técnica</strong>, <strong>soporte especializado</strong> y
+      <strong>reparación de equipos</strong> para garantizar el funcionamiento óptimo
+      de tu sistema de identificación.
+    </p>
+  </section>
+
+  <!-- Servicios Detallados -->
+  <section class="py-12 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Asesoría -->
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
+        <img
+          src="/public/img/Servicios/image1.jpg"
+          alt="Asesor de Keymar brindando atención personalizada sobre etiquetas y equipos de identificación"
+          class="rounded mb-4"
+        />
+        <h2 class="text-xl font-bold text-[#1E3A8A] mb-2">
+          Asesoría Personalizada
+        </h2>
+        <ul class="list-disc list-inside text-gray-700 space-y-2 text-sm">
+          <li>
+            Evaluación gratuita de tus necesidades de impresión, etiquetado o
+            escaneo.
+          </li>
+          <li>
+            Recomendación de equipos y consumibles más adecuados para tu
+            negocio.
+          </li>
+          <li>Capacitación básica para operarios en el uso de dispositivos.</li>
+        </ul>
+      </div>
+
+      <!-- Soporte -->
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
+        <img
+          src="/public/img/Servicios/image2.jpg"
+          alt="Especialista de soporte técnico configurando impresora de códigos de barras en Keymar"
+          class="rounded mb-4"
+        />
+        <h2 class="text-xl font-bold text-[#1E3A8A] mb-2">Soporte Técnico</h2>
+        <ul class="list-disc list-inside text-gray-700 space-y-2 text-sm">
+          <li>
+            Instalación y configuración de impresoras Zebra, Honeywell, Sato y
+            más.
+          </li>
+          <li>Diagnóstico remoto o presencial.</li>
+          <li>Mantenimiento preventivo y correctivo.</li>
+        </ul>
+      </div>
+
+      <!-- Reparación -->
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
+        <img
+          src="/public/img/Servicios/image3.jpg"
+          alt="Técnico reparando impresora de códigos de barras en el taller de Keymar"
+          class="rounded mb-4"
+        />
+        <h2 class="text-xl font-bold text-[#1E3A8A] mb-2">
+          Reparación de Equipos
+        </h2>
+        <ul class="list-disc list-inside text-gray-700 space-y-2 text-sm">
+          <li>
+            Reparación de impresoras térmicas, lectores y escáneres
+            industriales.
+          </li>
+          <li>Repuestos originales y técnicos capacitados.</li>
+          <li>Entrega rápida y seguimiento post-servicio.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-12 bg-white text-black text-center px-6">
+    <h3 class="text-2xl font-bold mb-4">¿Listo para optimizar tus procesos?</h3>
+    <p class="mb-6">
+      Cotiza tu servicio técnico, asesoría o reparación hoy mismo.
+    </p>
+    <a
+      href="/contacto"
+      class="inline-block bg-blue-600 text-white font-bold px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+    >
+      Contactar Ahora
+    </a>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl font-bold text-center mb-8 text-[#1E3A8A]">
+        Preguntas Frecuentes
+      </h2>
+      <div class="space-y-6 text-gray-700 text-base">
+        <div>
+          <h3 class="font-semibold">¿Atienden fuera de San Salvador?</h3>
+          <p>
+            Sí, brindamos soporte y asesoría en todo El Salvador. También
+            contamos con opciones de asistencia remota.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-semibold">¿Puedo solicitar una visita técnica?</h3>
+          <p>
+            Claro. Podemos coordinar visitas para diagnóstico, mantenimiento o
+            instalación.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-semibold">¿Qué marcas reparan?</h3>
+          <p>
+            Somos especialistas en Zebra, Honeywell y Sato, pero también
+            trabajamos con otras marcas previa revisión.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Fragment slot="footer"><Footer /></Fragment>
+</Layout>
