@@ -15,7 +15,6 @@ const marcas = [
   { src: "/logos/zebra.png", alt: "Zebra" },
   { src: "/logos/honeywell.png", alt: "Honeywell" },
   { src: "/logos/sato.png", alt: "Sato" },
-  { src: "/logos/datamax.webp", alt: "Datamax" },
   { src: "/logos/arclad.png", alt: "Arclad" },
   { src: "/logos/tsc.png", alt: "TSC" },
   { src: "/logos/datalogic.png", alt: "Datalogic" },
