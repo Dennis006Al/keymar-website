@@ -1,33 +1,33 @@
-'use client'
+"use client";
 
-import * as React from "react"
-import Autoplay from "embla-carousel-autoplay"
-import { Card, CardContent } from "@/components/ui/card"
+import * as React from "react";
+import Autoplay from "embla-carousel-autoplay";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
+} from "@/components/ui/carousel";
 
 const marcas = [
   { src: "/logos/zebra.png", alt: "Zebra" },
   { src: "/logos/honeywell.png", alt: "Honeywell" },
   { src: "/logos/sato.png", alt: "Sato" },
+  { src: "/logos/datamax.webp", alt: "Datamax" },
+  { src: "/logos/arclad.png", alt: "Arclad" },
   { src: "/logos/tsc.png", alt: "TSC" },
+  { src: "/logos/datalogic.png", alt: "Datalogic" },
   { src: "/logos/epson.png", alt: "Epson" },
-  { src: "/logos/zebra.png", alt: "Zebra" },
-  { src: "/logos/honeywell.png", alt: "Honeywell" },
-  { src: "/logos/sato.png", alt: "Sato" },
-  { src: "/logos/tsc.png", alt: "TSC 2" },
-  { src: "/logos/epson.png", alt: "Epson 2" },
-]
+  { src: "/logos/intermec.png", alt: "Intermec" },
+  { src: "/logos/nicelabel.webp", alt: "Nicelabel" },
+];
 
 export default function CarouselSize() {
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: false, stopOnMouseEnter: true })
-  )
+    Autoplay({ delay: 2000, stopOnInteraction: false, stopOnMouseEnter: true }),
+  );
 
   return (
     <Carousel
@@ -55,5 +55,5 @@ export default function CarouselSize() {
       {/* <CarouselPrevious />
       <CarouselNext /> */}
     </Carousel>
-  )
+  );
 }
