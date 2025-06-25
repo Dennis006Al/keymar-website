@@ -1,7 +1,7 @@
 ---
-import Layout from '../layouts/Layout.astro'
-import Navbar from '../components/Navbar.astro'
-import Footer from '../components/Footer.astro'
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout
@@ -12,16 +12,29 @@ import Footer from '../components/Footer.astro'
   <Fragment slot="navbar"><Navbar /></Fragment>
 
   <section class="py-20 px-6 bg-white text-center">
-    <h1 class="text-4xl font-bold mb-6">Reparación de Equipos</h1>
+    <h1 class="text-4xl font-bold mb-6 mt-4">Reparación de Equipos</h1>
     <p class="max-w-2xl mx-auto text-gray-700 mb-10">
-      En Keymar LabelTech contamos con un equipo técnico especializado en reparación de impresoras de etiquetas, lectores de códigos de barras y otros equipos.
+      En Keymar LabelTech contamos con un equipo técnico especializado en
+      reparación de impresoras de etiquetas, lectores de códigos de barras y
+      otros equipos.
     </p>
 
     <div class="max-w-3xl mx-auto text-gray-600 text-left space-y-6">
-      <p>✔ Diagnóstico y reparación de impresoras Zebra, Honeywell, TSC, entre otras.</p>
+      <p>
+        ✔ Diagnóstico y reparación de impresoras Zebra, Honeywell, TSC, entre
+        otras.
+      </p>
       <p>✔ Repuestos originales y garantía de calidad.</p>
       <p>✔ Atención ágil para minimizar tiempos de inactividad.</p>
       <p>✔ Servicio disponible en todo El Salvador.</p>
+    </div>
+    <div class="text-center mt-12">
+      <a
+        href="/servicios"
+        class="inline-block bg-blue-600 text-white font-bold px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+      >
+        Ver Servicios
+      </a>
     </div>
   </section>
 
